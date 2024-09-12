@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Transformation</title>
+</head>
+<body>
+    <h2>String Transformation</h2>
+    <p>Enter a string:</p>
+    <input type="text" id="userInput">
+    <button onclick="transformString()">Submit</button>
+
+    <p id="output"></p>
+
+    <script>
+        const transform = (str) => {
+            return str
+                .split('')
+                .map((char, index) => `${index}${char.toUpperCase()}`)
+                .join('');
+        };
+
+        function transformString() {
+            const inputString = document.getElementById('userInput').value;
+            const result = transform(inputString);
+            document.getElementById('output').innerText = result;
+        }
+    </script>
+</body>
+</html>
