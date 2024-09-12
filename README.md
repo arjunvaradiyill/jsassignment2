@@ -1,0 +1,1 @@
+Create a JavaScript arrow function that takes a string as an argument and returns the same string with each character in uppercase and preceded by its index in the original string. Prompt the user to enter the string. The output should be displayed in the browser window. Example: If input string is "hello" , output should be "0H1E2L3L4O"
